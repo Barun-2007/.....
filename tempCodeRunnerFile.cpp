@@ -1,0 +1,1 @@
+cout<<recbinary(arr1,tar1)<<endl;

@@ -1,0 +1,204 @@
+body{
+    background-color: black;
+    
+}
+.leftbox{
+    border: 2px solid black;
+    height: 600px;
+    width: 726px;
+
+}
+.rightbox{
+    border: 2px solid black;
+    height: 600px;
+    width: 726px;
+}
+.container{
+    border: 2px solid black;
+    height: 705px;
+    width: 1452px;
+}
+nav{
+    display: flex;
+    gap: 270px;
+    
+}
+.flex{
+    display: flex;
+}
+.sign{
+    font-size: 17px;
+    background-color: #48b74c;
+    border: 2px solid white;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+nav ul li{
+    display: flex;
+    color: black;
+    
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+.image{
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+    padding: 20px;
+}
+.b{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 10px 240px 10px 10px;
+    height: 40px;
+    width: 400px;
+    border-radius: 40px;
+    color: rgba(55, 44, 44, 0.54);
+    
+}
+.b p{
+    display: flex;
+    font-size: 16px;
+    width: 200px;
+    
+}
+.data{
+    font-size: 20px;
+    gap: 40px;
+}
+.b1{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 40px;
+}
+.invert{
+    filter: invert(1);
+}
+.sl{
+    
+    display: flex;
+    gap: 700px;
+}
+.sl button{
+    height: 50px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.box{
+    display: flex;
+    background-color: rgb(79 64 64 / 18%);
+    gap: 280px;
+    color: white;
+    font-weight: 700;
+}
+.box button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    height: 25px;
+    font-size: x-large;
+}
+.box1{
+    color: white;
+    border: 2px solid black;
+    height: 140px;
+    width: 400px;
+    background-color: rgb(232 196 196 / 11%);
+    font-weight: 600;
+}
+.box2{
+    color: white;
+    border: 2px solid black;
+    height: 140px;
+    width: 400px;
+    background-color: rgb(232 196 196 / 11%);
+    font-weight: 600;
+}
+.box2 button{
+    border-radius: 20px;
+    height: 35px;
+    font-weight: 600;
+    width: 150px;
+}
+.box1 button{
+    border-radius: 20px;
+    height: 35px;
+    font-weight: 600;
+    width: 150px;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 100px 170px 170px;
+}
+.grid1 ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 20px;
+    font-size: 10px;
+}
+.grid2 ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 20px;
+    font-size: 10px;
+}
+.cook{
+    font-size: 15px;
+    color: white;
+    margin-left: 40px;
+}
+.b2{
+    display: flex;
+    font-size: 15px;
+    margin-left: 40px;
+    gap: 10px;
+    border-radius: 20px;
+}
+.lgrid ul {
+    display: grid;
+    font-weight: 600;
+    gap: 20px;
+    color: white;
+    list-style: none;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+.lgrid1 ul {
+    display: grid;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.54);
+    list-style: none;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+.lgrid2 ul {
+    display: grid;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.54);
+    list-style: none;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+.lgrid3 ul {
+    display: grid;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.54);
+    list-style: none;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+.lgrid4 ul {
+    display: grid;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.54);
+    list-style: none;
+    grid-template-columns: 100px 100px 100px 100px;
+}

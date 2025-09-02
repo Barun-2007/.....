@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="b1">
+        Log in
+    </button>
+    <script>
+        const button = document.getElementById("b1");
+
+        function y() {
+            alert("Button was clicked!");
+        }
+        
+        // Enable button (not necessary since it's enabled by default)
+        button.disabled = false;
+
+        // Attach click event
+        button.addEventListener("click", y);
+    </script>
+</body>
+
+</html>
