@@ -5,25 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @media (max-width: 400px) {
+
+            body,
+            #container {
+                margin: 0 !important;
+                padding: 0 !important;
+
+            }
+            h1 {
+                margin: 0 !important;
+                padding: 0 !important;
+
+            }
+        }
+
+        #container {
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: rgb(134, 146, 140);
+
+            align-self: center;
+            padding: 40px;
+            margin-left: 400px;
+        }
+
+        #text {
+            margin: 20px;
+            padding: 20px;
+            height: 50px;
+            width: 400px;
+            background-color: rgb(66, 198, 132);
+            font-size: 50px;
+
+        }
+
+        #grid {
+            display: grid;
+            grid-template-areas: "b b b b"
+                "b1 b1 b1 b1"
+                "b2 b2 b2 b2"
+                "b3 b3 b3 b3 "
+                "b4 b4 b4 b4"
+                "b5 b5 b5 b5";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: black;
+
+        }
+
+        button {
+            margin: 5px;
+            border-radius: 100px;
+            width: 50px;
+            height: 47px;
+            font-size: 20px;
+        }
+
+        h1 {
+            margin-left: 500px;
+            font-size: 40px;
+        }
+    </style>
 </head>
 
 <body>
-    <button id="b1">
-        Log in
-    </button>
-    <script>
-        const button = document.getElementById("b1");
+    <h1>Scientific calculator</h1>
+    <div id="container">
+        <input type="text" id="text" class="text">
+        <div id="grid">
+            <button onclick="appendToDisplay('+')" class="b">+</button>
+            <button onclick="appendToDisplay('-')" class="b">-</button>
+            <button onclick="appendToDisplay('*')" class="b">*</button>
+            <button onclick="appendToDisplay('/')" class="b">/</button>
+            <button onclick="appendToDisplay('1')" class="b1">1</button>
+            <button onclick="appendToDisplay('2')" class="b1">2</button>
+            <button onclick="appendToDisplay('3')" class="b1">3</button>
+            <button onclick="appendToDisplay('4')" class="b1">4</button>
+            <button onclick="appendToDisplay('5')" class="b2">5</button>
+            <button onclick="appendToDisplay('6')" class="b2">6</button>
+            <button onclick="appendToDisplay('7')" class="b2">7</button>
+            <button onclick="appendToDisplay('8')" class="b2">8</button>
+            <button onclick="appendToDisplay('9')" class="b3">9</button>
+            <button onclick="appendToDisplay('0')" class="b3">0</button>
+            <button onclick="clearDisplay()" class="b3">C</button>
+            <button onclick="calculate()" class="b3">=</button>
+            <button onclick="appendToDisplay('.')" class="b4">.</button>
+            <button onclick="sinDisplay()" class="b4">sin</button>
+            <button onclick="cosDisplay()" class="b4">cos</button>
+            <button onclick="logDisplay()" class="b4">log</button>
+            <button onclick="appendToDisplay('**')" class="b5">pow</button>
+            <button onclick="back()" class="b5">back</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
 
-        function y() {
-            alert("Button was clicked!");
-        }
-        
-        // Enable button (not necessary since it's enabled by default)
-        button.disabled = false;
+        </div>
+        <script>
+            const display = document.getElementById("text");
+            function appendToDisplay(k){
+                if (k == "**") {
+                    display.value += "**";
+                }
+                else {
+                    display.value += k;
+                }
+            }
+            function clearDisplay() {
+                display.value = " ";
+            }
+            function calculate() {
+                display.value = eval(display.value);
+            }
+            function sinDisplay() {
+                display.value = Math.sin(parseFloat(display.value));
 
-        // Attach click event
-        button.addEventListener("click", y);
-    </script>
+            }
+            function logDisplay() {
+                display.value = Math.log(parseFloat(display.value));
+
+            }
+            function cosDisplay() {
+                display.value = Math.cos(parseFloat(display.value));
+            }
+            function tanDisplay() {
+                display.value = Math.tan(parseFloat(display.value));
+            }
+            function back() {
+                display.value = display.value.slice(0, -1);
+            }
+
+        </script>
 </body>
 
 </html>
