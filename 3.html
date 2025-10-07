@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Example</title>
+  <style>
+    .card{
+      border: 2px solid black;
+      height: 600px;
+      width:400px;
+      margin: 20px;
+      justify-content: center;
+    }
+    .card img{
+      margin: 30px;
+    }
+    .card p{
+      margin-left: 60px;
+      font-weight: 700;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="myCard" class="card">
+    <img height="200px" width="300px" 
+         src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Desktop-nature-photo-hd-download-free.jpg" 
+         alt="">
+    <p>yo this is a card</p>
+    <p>this is a card 😊</p>
+  </div>
+
+  <button onclick="duplicateCard()">Duplicate Card</button>
+
+  <div id="card-container"></div>
+
+  <script>
+    function duplicateCard() {
+      let card = document.getElementById("myCard");
+      let clone = card.cloneNode(true);  // deep copy
+      clone.querySelector("p").textContent = "New Card"; // change first <p>
+      document.getElementById("card-container").appendChild(clone);
+
+      // Example: add extra cards from array
+      let data = [
+        { title: "Card 1", text: "First card text", img: "https://picsum.photos/200/300?random=1" },
+        { title: "Card 2", text: "Second card text", img: "https://picsum.photos/200/300?random=2" }
+      ];
+
+      let container = document.getElementById("card-container");
+
+      data.forEach(item => {
+        container.innerHTML += `
+          <div class="card" style="width: 18rem;">
+            <img src="${item.img}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${item.title}</h5>
+              <p class="card-text">${item.text}</p>
+            </div>
+          </div>`;
+      });
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1</title>
+</head>
+<body>
+  <form >
+    <div id="username">
+      <label for="username">username</label><br>
+      <input type="text"><br>
+    </div>
+    <div id="password">
+      <label for="password">password</label><br>
+      <input type="text"><br>
+    </div>
+    <div id="Email">
+      <label for="Email">Email</label><br>
+      <input type="text"><br>
+    </div>
+    <div id="submit">
+      <input type="submit" value="sign up">
+    </div>
+  </form>
+  <div class="home">
+    <a href="">
+      <span>
+      </span>
+    </a>
+  </div>
+</body>
+</html> -->
